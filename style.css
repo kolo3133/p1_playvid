@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.6rem;
+}
+
+.hero-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: -1;
+}
+
+.scroll-fix::before {
+  display: block;
+  margin-top: -3rem;
+  height: 3rem;
+  content: "";
+}
+
+.orange-color {
+  color: rgb(255, 102, 0);
+}
+.blue-color {
+  color: rgb(145, 161, 255);
+}
+/*  NAWIGACJA   */
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+nav .navbar-nav,
+nav .fa-bars {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.nav-toggle {
+  height: 3rem;
+}
+
+.img-block {
+  position: relative;
+  height: 30rem;
+  background-image: url("./img/team_img.jpg");
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* Header */
+header {
+  position: relative;
+  height: 50rem;
+  background-image: url("./img/hero_img.jpg");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+}
+
+header .btn {
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* ABOUT US*/
+.about-boxes h3 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-boxes .about-icon {
+  font-size: 3rem;
+}
+
+.about-box {
+  box-shadow: rgba(46, 75, 240, 0.4) -5px 5px, rgba(46, 91, 240, 0.3) -10px 10px,
+    rgba(88, 46, 240, 0.2) -15px 15px, rgba(75, 46, 240, 0.1) -20px 20px,
+    rgba(98, 46, 240, 0.05) -25px 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .about-box {
+    box-shadow: rgba(46, 75, 240, 0.4) -5px 5px,
+      rgba(46, 91, 240, 0.3) -10px 10px, rgba(88, 46, 240, 0.2) -15px 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-box {
+    box-shadow: rgba(46, 75, 240, 0.4) -5px 5px,
+      rgba(46, 91, 240, 0.3) -10px 10px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .about-box {
+    box-shadow: none;
+  }
+}
+.accoridon-item {
+  background-color: white;
+}
+#aboutus .accordion-button {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* ZESPÓŁ */
+
+#team {
+  padding: 8rem 0rem;
+}
+#team h1 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#team .card,
+#team .card-body {
+  overflow: hidden;
+}
+
+#team .card-img-top {
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+#team .card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* KONTAKT */
+
+#contact h3 {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+#contact form input {
+  height: 4rem;
+}
+
+#contact form .submit-btn {
+  width: 10rem;
+  text-transform: uppercase;
+}
